@@ -72,16 +72,16 @@
 %https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
 \usepackage{placeins}
 \newcommand{\codeexample}[2]{
-	\begin{figure*}[h]
+	\begin{fullwidth}
+		\vspace{\baselineskip}
 		\VerbatimInput[
 			framesep=3mm,
 			frame=lines, % line above and below code section
 			numbers=left, %Line number
 			label= #1, %name of code section
-			baselinestretch=0.75, %Use line space more similat to line space in code editors
+			baselinestretch=0.75, %Use line space more similar	 to line space in code editors
 		]{#2} %Write the relative file path and the name of the file to be included
-	\end{figure*}
-	\FloatBarrier
+	\end{fullwidth}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
